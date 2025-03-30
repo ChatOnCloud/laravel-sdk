@@ -1,0 +1,32 @@
+{
+    "name": "chatoncloud/laravel-sdk",
+    "description": "SDK Laravel para integração com a plataforma ChatOnCloud (abertura de tickets via API)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Seu Nome",
+        "email": "seu@email.com"
+      }
+    ],
+    "require": {
+      "php": "^8.1",
+      "illuminate/support": "^10|^11",
+      "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "ChatOnCloud\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "ChatOnCloud\\ChatOnCloudServiceProvider"
+        ]
+      }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+  }
+  
