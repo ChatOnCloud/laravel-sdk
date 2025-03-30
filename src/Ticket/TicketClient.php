@@ -44,7 +44,7 @@ class TicketClient
                 }
             }
 
-            $oResponse = $oRequest->post($sUrl, $aData);
+            $oResponse = $oRequest->post($sUrl . '/ticket', $aData);
 
             if ($oResponse->failed()) {
                 Log::error('[ChatOnCloud SDK] Falha ao criar ticket.', [
